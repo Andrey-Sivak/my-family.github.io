@@ -1,0 +1,194 @@
+body,
+p,
+ul, li,
+h1, h2, h3, h4, h5, h6,
+input,
+textarea,
+a {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border: none;
+  text-decoration: none; }
+
+* {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: "DIN2014Narrow";
+  font-weight: 300;
+  src: url("../fonts/DIN2014Narrow-Light.otf") format("truetype");
+  font-style: normal; }
+
+@font-face {
+  font-family: "PF-Reminder-Pro";
+  font-weight: 400;
+  src: url("../fonts/PF-Reminder-Pro-Regular.ttf") format("truetype");
+  font-style: normal; }
+
+@font-face {
+  font-family: "PF-Reminder-Pro";
+  font-weight: 500;
+  src: url("../fonts/PF-Reminder-Pro-Medium.ttf") format("truetype");
+  font-style: normal; }
+
+.text-form-no-underscore {
+  font-family: "DIN2014Narrow";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 122%;
+  color: #C4C4C4; }
+
+.text-canvas {
+  font-family: "DIN2014Narrow";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 120%;
+  color: #C4C4C4; }
+
+.text-ui-input {
+  font-family: "DIN2014Narrow";
+  color: #C4C4C4;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 118%; }
+
+.text-ui-form {
+  font-family: "DIN2014Narrow";
+  color: #C4C4C4;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 92%; }
+
+.text-h1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 41%;
+  color: #C4C4C4;
+  text-transform: uppercase; }
+  @media (max-width: 767px) {
+    .text-h1 {
+      font-size: 38px;
+      line-height: 111%; } }
+
+.text-h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 106%;
+  text-transform: uppercase;
+  color: #C4C4C4; }
+  @media (max-width: 767px) {
+    .text-h2 {
+      font-size: 20px;
+      line-height: 80%; } }
+
+.text-h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 127%;
+  text-transform: uppercase;
+  color: #C4C4C4; }
+  @media (max-width: 767px) {
+    .text-h3 {
+      font-size: 14px;
+      line-height: 114%; } }
+
+.text-common {
+  font-family: "DIN2014Narrow";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 122%;
+  color: #C4C4C4; }
+  @media (max-width: 767px) {
+    .text-common {
+      font-size: 18px;
+      line-height: 111%; } }
+
+.text-menu {
+  font-family: "PF-Reminder-Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  color: #333538;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s; }
+  .text-menu:hover, .text-menu:active, .text-menu:focus {
+    color: #C10230; }
+  @media (max-width: 767px) {
+    .text-menu {
+      font-weight: normal; } }
+
+.text-btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  font-family: "PF-Reminder-Pro";
+  color: #C4C4C4; }
+  @media (max-width: 767px) {
+    .text-btn {
+      font-weight: normal; } }
+
+.text-link {
+  font-family: "DIN2014Narrow";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 106%;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #C4C4C4; }
+  @media (max-width: 767px) {
+    .text-link {
+      font-size: 16px;
+      line-height: 87%; } }
+
+.text-card {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 83%;
+  color: #C4C4C4;
+  font-family: "DIN2014Narrow"; }
+
+.sh-product-card {
+  background: #C4C4C4;
+  box-shadow: 0 20px 50px rgba(101, 89, 28, 0.3); }
+
+.sh-mob-card {
+  background: #C4C4C4;
+  box-shadow: 0 5px 30px rgba(101, 89, 28, 0.2); }
+
+.sh-1 {
+  background: #C4C4C4;
+  box-shadow: 0 10px 50px rgba(101, 89, 28, 0.45); }
+
+.sh {
+  background: #C4C4C4;
+  box-shadow: 0 10px 50px rgba(101, 89, 28, 0.3); }
+
+.message {
+  padding: 10px;
+  border: 2px solid currentColor;
+  width: 10%;
+  margin: 5rem auto;
+  text-align: center;
+  border-radius: 0.4em; }
+  .message-info {
+    color: blue;
+    background-color: #9999ff; }
+  .message-confirm {
+    color: green;
+    background-color: #1aff1a; }
+  .message-warning {
+    color: red;
+    background-color: #ff9999; }
