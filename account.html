@@ -230,7 +230,7 @@
           <div class="second-section__card_img"></div>
           <div class="second-section__card_item">
             <p class="second-section__card_label">Статус</p>
-            <p class="second-section__card_target status">Одобрен</p>
+            <p class="second-section__card_target status scc">Одобрен</p>
           </div>
           <div class="second-section__card_item">
             <p class="second-section__card_label">Дата</p>
@@ -245,7 +245,7 @@
           <div class="second-section__card_img"></div>
           <div class="second-section__card_item">
             <p class="second-section__card_label">Статус</p>
-            <p class="second-section__card_target status">Одобрен</p>
+            <p class="second-section__card_target status scc">Одобрен</p>
           </div>
           <div class="second-section__card_item">
             <p class="second-section__card_label">Дата</p>
@@ -260,7 +260,7 @@
           <div class="second-section__card_img"></div>
           <div class="second-section__card_item">
             <p class="second-section__card_label">Статус</p>
-            <p class="second-section__card_target status">Отклонен</p>
+            <p class="second-section__card_target status dnn">Отклонен</p>
           </div>
           <div class="second-section__card_item">
             <p class="second-section__card_label">Дата</p>
@@ -576,6 +576,27 @@
     </div>
   </div>
 
+<div class="modal success s">
+  <div class="ticket">
+    <p class="ticket__caption">Чек принят</p>
+    <span class="close">&times;</span>
+    <p class="ticket__text">Этот чек успешно зарегистрирован, отслеживайте статус розыгрыша в личном кабинете</p>
+    <span class="ticket__btn">В личный кабинет</span>
+  </div>
+</div>
+
+<div class="modal denied d">
+  <div class="ticket">
+    <p class="ticket__caption">Чек отклонЁн</p>
+    <span class="close">&times;</span>
+    <p class="ticket__text">Этот чек уже был загружен ранее. Один чек можно загружать только один раз.</p>
+    <div class="ticket__btns">
+      <span class="ticket__btns_item">Понятно</span>
+      <span class="ticket__btns_item">Загрузить еще</span>
+    </div>
+  </div>
+</div>
+
   <div class="modal-play">
     <div class="modal-play__header container">
       <a href="./index.html" class="modal-play__logo">
@@ -676,7 +697,7 @@
 </g>
 </svg>
 
-        <svg data-angle="240" class="present-sector modal-play__circle_triangle orange" x="0px" y="0px"
+        <svg data-angle="60" class="present-sector modal-play__circle_triangle orange" x="0px" y="0px"
              viewBox="0 0 263.6 263" style="enable-background:new 0 0 263.6 263;" xml:space="preserve">
               <path class="half" d="M132.3,263.2c46.3-0.1,91.6-12.4,131.3-35.6L128.6,0L0,228.3C40.4,251.3,86,263.3,132.3,263.2z"/>
           <path class="number" d="M84.7,170.2l2,63.8l-13,0.3l-1.5-49.5l-7.4,6.1l-0.4-13.3l8.9-7.2L84.7,170.2z"/>
@@ -687,7 +708,7 @@
 	c9.3-0.2,18.3,4.2,18.7,16.5c0.6,17.9-13.8,22.5-28.9,22.8l-1,0l0.2,6.6l28.7-0.6l0.2,6.6l-28.7,0.6l0.4,12.7l-8.6,0.2L166.3,219.8z
 	 M174.3,200l3-0.1c11.3-0.2,18.3-4.3,18-15.3c-0.3-8.1-6.5-11-11.6-10.9l-10.1,0.2L174.3,200z"/>
 </svg>
-        <svg data-angle="120" class="present-sector modal-play__circle_triangle blue" x="0px" y="0px"
+        <svg data-angle="300" class="present-sector modal-play__circle_triangle blue" x="0px" y="0px"
              viewBox="0 0 263.6 263" style="enable-background:new 0 0 263.6 263;" xml:space="preserve">
 	<path class="half" d="M-0.4,228.9c40.3,22.6,85.9,34.4,132.4,33.9c46.5-0.4,92.1-12.9,132.3-36.3L131.4,0.6L-0.4,228.9z"/>
           <path class="number" d="M89.9,164.3l1.2,63.6l-13,0.4l-0.9-49.4l-7.5,6.2l-0.2-13.3l9-7.2L89.9,164.3z"/>
@@ -698,7 +719,7 @@
 		c9.4-0.3,18.3,4,18.6,16.3c0.3,17.9-14.2,22.5-29.3,22.9l-1,0l0.1,6.6l28.8-0.7l0.1,6.6l-28.9,0.8l0.3,12.6l-8.7,0.2L172.1,212.9z
 		 M180.3,193.1l3-0.1c11.4-0.3,18.5-4.5,18.2-15.4c-0.2-8.1-6.3-10.9-11.6-10.8l-10.1,0.3L180.3,193.1z"/>
 </svg>
-        <svg data-angle="360" class="present-sector modal-play__circle_triangle purple" x="0px" y="0px"
+        <svg data-angle="180" class="present-sector modal-play__circle_triangle purple" x="0px" y="0px"
              viewBox="0 0 263.6 263" style="enable-background:new 0 0 263.6 263;" xml:space="preserve">
 	<path class="half" d="M133.9,0L0.6,227.8c40,23,85.4,35.2,131.8,35.2c46.3,0,91.9-12.2,132.2-35.3L133.9,0z"/>
           <path class="number" d="M99.1,218l0.5,10.9l-34,1.6l-0.3-8.3l16.5-26c2.6-4.2,3.8-8.5,3.7-12.8c-0.2-5.2-2.6-7.7-5.8-7.5
@@ -717,13 +738,13 @@
           <span>Вращать</span>
         </section>
 
-        <section data-angle="180" class="present-sector modal-play__circle_berry strawberry">
+        <section data-angle="360" class="present-sector modal-play__circle_berry strawberry">
           <img src="./dist/img/fruits/strawberry.png" alt="berry">
         </section>
-        <section data-angle="300" class="present-sector modal-play__circle_berry raspberry">
+        <section data-angle="120" class="present-sector modal-play__circle_berry raspberry">
           <img src="./dist/img/fruits/raspberry.png" alt="berry">
         </section>
-        <section data-angle="60" class="present-sector modal-play__circle_berry currant">
+        <section data-angle="240" class="present-sector modal-play__circle_berry currant">
           <img src="./dist/img/fruits/currant.png" alt="berry">
         </section>
 
