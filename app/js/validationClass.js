@@ -61,6 +61,7 @@ class Validation {
             checkbox: this.wrap.querySelector(options.checkbox),
             checkbox1: this.wrap.querySelector(options.checkbox1),
             password: this.wrap.querySelector(options.password),
+            textarea: this.wrap.querySelector(options.textarea),
         };
 
         this.success = false;
@@ -238,6 +239,14 @@ class Validation {
                         this.checkPassword( elem );
                     } catch (e) {
                         this.catchErrors( elem, e, CheckPassword );
+                        errors.push(e);
+                    }
+                    break;
+                case 'textarea' :
+                    try {
+                        this.checkName( elem );
+                    } catch (e) {
+                        this.catchErrors( elem, e, CheckEmpty, CheckLength, NameValidationError );
                         errors.push(e);
                     }
                     break;

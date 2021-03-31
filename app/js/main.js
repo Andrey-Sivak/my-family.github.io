@@ -385,52 +385,6 @@ window.addEventListener('load', function () {
             return;
         }
 
-        /*if (document.querySelector('.form-page.enter')) {
-            const valid = new Validation({
-                submitBtn: 'form-btn',
-                phone: 'phone',
-                password: 'pass',
-            });
-
-            valid.init();
-
-            const eye = document.querySelector('.eye');
-            const field = eye.parentElement;
-            const password = document.getElementById('pass');
-            eye.addEventListener('click', () => {
-                field.classList.toggle('hide');
-
-                if (password.getAttribute('type') === 'password') {
-                    password.setAttribute('type', 'text');
-                } else {
-                    password.setAttribute('type', 'password');
-                }
-            })
-        }
-
-        if (document.querySelector('.form-page.forgot-pass')) {
-            const valid = new Validation({
-                submitBtn: 'form-btn',
-                phone: 'phone',
-            });
-
-            valid.init();
-        }
-
-        if (document.querySelector('.form-page.register')) {
-            const valid = new Validation({
-                submitBtn: 'form-btn',
-                phone: 'phone',
-                email: 'email',
-                firstName: 'f-name',
-                lastName: 'l-name',
-                checkbox: 'check1',
-                checkbox1: 'check2',
-            });
-
-            valid.init();
-        }*/
-
         const forms = [...document.querySelectorAll('.form')];
 
         forms.forEach(f => {
@@ -443,6 +397,7 @@ window.addEventListener('load', function () {
                     firstName: 'input.name',
                     lastName: 'input.sel',
                     checkbox: 'input.check',
+                    textarea: 'textarea',
                 }).init();
             } else if (f.classList.contains('enter')) {
 
@@ -463,6 +418,13 @@ window.addEventListener('load', function () {
                     lastName: 'input.l-name',
                     checkbox: 'input.check1',
                     checkbox1: 'input.check2',
+                }).init();
+            } else if (f.classList.contains('forgot')) {
+
+                new Validation({
+                    wrap: '.form.forgot',
+                    submitBtn: '.form__btn',
+                    phone: 'input.phone',
                 }).init();
             }
         })
@@ -748,6 +710,19 @@ window.addEventListener('load', function () {
                     el.classList.remove("scroll");
                 }
             }
+        }
+    })();
+
+    (function tmp() {
+        if (document.querySelector('.account-page')) {
+            document.querySelector('.first-section__btn')
+                .addEventListener('click', e => {
+                    e.preventDefault();
+                    document.querySelector('.download-ticket')
+                        .classList.add('active');
+                });
+
+            document.get
         }
     })();
 });
