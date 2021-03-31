@@ -416,6 +416,7 @@ window.addEventListener('load', function () {
                     phone: 'input.phone',
                     firstName: 'input.f-name',
                     lastName: 'input.l-name',
+                    thirdName: 'input.t-name',
                     checkbox: 'input.check1',
                     checkbox1: 'input.check2',
                 }).init();

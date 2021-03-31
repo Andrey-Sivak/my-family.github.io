@@ -56,6 +56,7 @@ class Validation {
         this.inputs = {
             lastName: this.wrap.querySelector(options.lastName),
             firstName: this.wrap.querySelector(options.firstName),
+            thirdName: this.wrap.querySelector(options.thirdName),
             phone: this.wrap.querySelector(options.phone),
             email: this.wrap.querySelector(options.email),
             checkbox: this.wrap.querySelector(options.checkbox),
@@ -243,6 +244,14 @@ class Validation {
                     }
                     break;
                 case 'textarea' :
+                    try {
+                        this.checkName( elem );
+                    } catch (e) {
+                        this.catchErrors( elem, e, CheckEmpty, CheckLength, NameValidationError );
+                        errors.push(e);
+                    }
+                    break;
+                case 'thirdName' :
                     try {
                         this.checkName( elem );
                     } catch (e) {
