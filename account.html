@@ -974,28 +974,24 @@
       <h1 class="section-caption color-dark-red text-h1">Войти</h1>
       <p class="form-page__ask">У вас нет аккаунта? <br> <a href="#" data-open="register">Регистрация</a> или вы <a
               href="#" data-open="forgot">Забыли пароль?</a></p>
-      <form action="#" class="form" id="form">
+      <form action="#" class="form enter">
         <div class="form__field">
-          <label for="phone"></label>
           <input type="text"
                  name="phone"
-                 id="phone"
-                 class="text-form-no-underscore"
+                 class="phone text-form-no-underscore"
                  placeholder="Телефон">
         </div>
         <div class="form__field pas">
           <span class="eye"></span>
-          <label for="pass"></label>
           <input type="password"
                  name="pass"
-                 id="pass"
-                 class="text-form-no-underscore"
+                 class="pass text-form-no-underscore"
                  placeholder="Пароль">
         </div>
         <p class="form-page__ask">Пароль неверный. <br> <a href="#" data-open="enter">Поробуйте ещё раз</a> или <a
                 href="#" data-open="forgot">восстановите</a> его</p>
         <input type="submit" value="" class="hide">
-        <button id="form-btn" class="form__btn text-btn">
+        <button  class="form__btn text-btn">
           <span>Продолжить</span>
           <svg viewBox="0 0 151 51" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="bg-svg"
@@ -1079,37 +1075,29 @@
     <section class="form-page__wrap container">
       <h1 class="section-caption color-dark-red text-h1">Регистрация</h1>
       <p class="form-page__ask">У вас есть аккаунт? <a href="#" data-open="enter">Войти в кабинет</a></p>
-      <form action="#" class="form" id="form">
+      <form action="#" class="form register">
         <div class="form__field">
-          <label for="email"></label>
           <input type="text"
                  name="email"
-                 id="email"
-                 class="text-form-no-underscore"
+                 class="email text-form-no-underscore"
                  placeholder="Электронная почта*">
         </div>
         <div class="form__field">
-          <label for="phone"></label>
           <input type="text"
                  name="phone"
-                 id="phone"
-                 class="text-form-no-underscore"
+                 class="phone text-form-no-underscore"
                  placeholder="Телефон*">
         </div>
         <div class="form__field">
-          <label for="l-name"></label>
           <input type="text"
                  name="l-name"
-                 id="l-name"
-                 class="text-form-no-underscore"
+                 class="l-name text-form-no-underscore"
                  placeholder="Фамилия*">
         </div>
         <div class="form__field">
-          <label for="f-name"></label>
           <input type="text"
                  name="f-name"
-                 id="f-name"
-                 class="text-form-no-underscore"
+                 class="f-name text-form-no-underscore"
                  placeholder="Имя*">
         </div>
         <div class="form__field checkbox">
@@ -1118,6 +1106,7 @@
             <input type="checkbox"
                    checked="checked"
                    name="check1"
+                   class="check1"
                    id="check1">
             <span></span>
           </label>
@@ -1128,13 +1117,14 @@
             <input type="checkbox"
                    checked="checked"
                    name="check2"
+                   class="check2"
                    id="check2">
             <span></span>
           </label>
         </div>
 
         <input type="submit" value="" class="hide">
-        <button class="form__btn text-btn" id="form-btn">
+        <button class="form__btn text-btn">
           <span>Продолжить</span>
           <svg viewBox="0 0 151 51" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="bg-svg"
