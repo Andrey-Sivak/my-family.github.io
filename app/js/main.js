@@ -722,7 +722,12 @@ window.addEventListener('load', function () {
                         .classList.add('active');
                 });
 
-            document.get
+            document.querySelector('.download-ticket')
+                .querySelector('.close')
+                .addEventListener('click',e => {
+                    document.querySelector('.download-ticket')
+                        .classList.remove('active');
+                })
         }
     })();
 });
