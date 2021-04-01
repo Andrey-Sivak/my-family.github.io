@@ -2,10 +2,29 @@
 import * as $ from 'jquery';
 import './slick.min';
 
-import {Validation} from "./validationClass";
+// import {Validation} from "./validationClass";
 import {Slider} from "./slider";
 
 window.addEventListener('load', function () {
+
+    (function passwordShow() {
+        if (document.querySelector('.modal-sign.enter')) {
+            const wrap = document.querySelector('.modal-sign.enter');
+            const eye = wrap.querySelector('.eye');
+            const input = wrap.querySelector('input.pass');
+            const field = wrap.querySelector('.pas');
+
+                eye.addEventListener('click', e => {
+                    field.classList.toggle('hide');
+
+                    if (field.classList.contains('hide')) {
+                        input.type = 'text';
+                    } else {
+                        input.type = 'password';
+                    }
+                })
+        }
+    })();
 
     (function fixHeader() {
 
@@ -380,7 +399,7 @@ window.addEventListener('load', function () {
         }
     })();
 
-    (function formHandler() {
+    /*(function formHandler() {
         if (!document.querySelector('.form')) {
             return;
         }
@@ -429,7 +448,7 @@ window.addEventListener('load', function () {
                 }).init();
             }
         })
-    })();
+    })();*/
 
     /*(function downloadTicket() {
         if (document.querySelector('.header__download-check')) {

@@ -20,7 +20,14 @@
   <noscript>
     <link rel="stylesheet" href="./dist/css/home-page.min.css">
   </noscript>
+  <script
+          src="https://code.jquery.com/jquery-3.6.0.min.js"
+          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+          crossorigin="anonymous"
+          defer></script>
+  <script src="jquery.validate.min.js" defer></script>
   <script type="text/javascript" src="./dist/js/main.js" defer></script>
+  <script type="text/javascript" src="./script.js" defer></script>
 </head>
 <body class="h">
 
@@ -1204,7 +1211,7 @@
             <label for="name" class="form__label"></label>
             <input type="text"
                    id="name"
-                   name="name"
+                   name="FullName"
                    class="name form__input text-common color-grey-text"
                    placeholder="Представьтесь">
           </div>
@@ -1234,7 +1241,7 @@
           <div class="form__field">
             <label for="mes" class="form__label"></label>
             <textarea id="mes"
-                      name="mes"
+                      name="Message"
                       class="form__input text-common color-grey-text"
                       placeholder="Ваше сообщение"
                       minlength="10"></textarea>
