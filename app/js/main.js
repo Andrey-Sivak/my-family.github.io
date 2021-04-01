@@ -141,25 +141,23 @@ window.addEventListener('load', function () {
     })();
 
     (function select() {
-        if (!document.getElementsByClassName('select').length) {
-            return;
+        if (document.getElementsByClassName('select').length) {
+            [...document.getElementsByClassName('select')].forEach(s => {
+                const header = s.getElementsByClassName('select-header')[0];
+                s.addEventListener('click', function () {
+                    this.classList.toggle('active');
+                });
+
+                const list = s.getElementsByClassName('select-list')[0];
+                [...list.children].forEach(i => {
+                    i.addEventListener('click', function () {
+                        header.innerHTML = this.innerHTML;
+                        s.parentElement.getElementsByClassName('sel')[0].value = this.dataset.select;
+                    })
+                })
+            });
         }
 
-
-        [...document.getElementsByClassName('select')].forEach(s => {
-            const header = s.getElementsByClassName('select-header')[0];
-            s.addEventListener('click', function () {
-                this.classList.toggle('active');
-            });
-
-            const list = s.getElementsByClassName('select-list')[0];
-            [...list.children].forEach(i => {
-                i.addEventListener('click', function () {
-                    header.innerHTML = this.innerHTML;
-                    s.parentElement.getElementsByClassName('sel')[0].value = this.innerHTML;
-                })
-            })
-        });
 
         if (document.querySelector('.winners__tabs_list-wrap')) {
             const selectPresent = document.querySelector('.winners__tabs_list-wrap');
@@ -393,6 +391,8 @@ window.addEventListener('load', function () {
                         const val = target.innerHTML;
                         s.getElementsByClassName('second-section__search_header')[0]
                             .innerHTML = val;
+                        document.querySelector('.second-section__search')
+                            .querySelector('.sel').value = target.dataset.select;
                     }
                 })
             })
@@ -620,25 +620,6 @@ window.addEventListener('load', function () {
     })();
 
     (function popups() {
-        if (document.querySelector('.modal.success')) {
-            const btns = [...document.querySelectorAll('.scc')];
-            btns.forEach(i => {
-                i.addEventListener('click', () => {
-                    const popup = document.querySelector('.s');
-                    popup.classList.add('active');
-                    popup.querySelector('.ticket__btn')
-                        .addEventListener('click', () => {
-                            popup.classList.remove('active');
-                        });
-
-                    popup.querySelector('.close')
-                        .addEventListener('click', () => {
-                            popup.classList.remove('active');
-                        });
-                });
-            });
-        }
-
         if (document.querySelector('.modal.denied')) {
             const btns = [...document.querySelectorAll('.dnn')];
             btns.forEach(i => {

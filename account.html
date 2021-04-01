@@ -205,6 +205,7 @@
     <h1 class="text-h1 color-dark-red section-caption">ТВОИ ЧЕКИ И призы</h1>
     <div class="second-section__wrap">
       <div class="second-section__search">
+        <input type="hidden" name="select" value="" class="sel">
         <div class="second-section__search_date second-section__search_item">
           <p class="second-section__search_header">Выбрать дату</p>
           <svg class="second-section__search_arr"
@@ -217,13 +218,13 @@
           </svg>
           <div class="second-section__search_main">
             <div class="second-section__search_wrap">
-              <p class="second-section__search_i">1/02/21 — 7/02/21</p>
-              <p class="second-section__search_i">1/02/21 — 7/02/21</p>
-              <p class="second-section__search_i">1/02/21 — 7/02/21</p>
-              <p class="second-section__search_i">1/02/21 — 7/02/21</p>
-              <p class="second-section__search_i">1/02/21 — 7/02/21</p>
-              <p class="second-section__search_i">1/02/21 — 7/02/21</p>
-              <p class="second-section__search_i">1/02/21 — 7/02/21</p>
+              <p data-select="1231" class="second-section__search_i">1/02/21 — 7/02/21</p>
+              <p data-select="1231" class="second-section__search_i">1/02/21 — 7/02/21</p>
+              <p data-select="1231" class="second-section__search_i">1/02/21 — 7/02/21</p>
+              <p data-select="1231" class="second-section__search_i">1/02/21 — 7/02/21</p>
+              <p data-select="1231" class="second-section__search_i">1/02/21 — 7/02/21</p>
+              <p data-select="1231" class="second-section__search_i">1/02/21 — 7/02/21</p>
+              <p data-select="1231" class="second-section__search_i">1/02/21 — 7/02/21</p>
             </div>
           </div>
         </div>
@@ -241,7 +242,7 @@
             <div class="second-section__search_wrap">
               <p class="second-section__search_i">Гарантированный</p>
               <p class="second-section__search_i">Еженедельный</p>
-              <p class="second-section__search_i">Главный</p>
+              <p class="second-section__search_i">Ежемесячный</p>
             </div>
           </div>
         </div>
@@ -261,6 +262,66 @@
           <div class="second-section__card_item">
             <p class="second-section__card_label">Приз</p>
             <p class="second-section__card_target present"></p>
+          </div>
+        </div>
+        <div class="second-section__card success">
+          <div class="second-section__card_img"></div>
+          <div class="second-section__card_item">
+            <p class="second-section__card_label">Статус</p>
+            <p class="second-section__card_target status scc">Одобрен</p>
+          </div>
+          <div class="second-section__card_item">
+            <p class="second-section__card_label">Дата</p>
+            <p class="second-section__card_target">24 августа 2021</p>
+          </div>
+          <div class="second-section__card_item">
+            <p class="second-section__card_label">Приз</p>
+            <a href="#" class="second-section__card_target show-modal">Играть</a>
+          </div>
+        </div>
+        <div class="second-section__card success">
+          <div class="second-section__card_img"></div>
+          <div class="second-section__card_item">
+            <p class="second-section__card_label">Статус</p>
+            <p class="second-section__card_target status scc">Одобрен</p>
+          </div>
+          <div class="second-section__card_item">
+            <p class="second-section__card_label">Дата</p>
+            <p class="second-section__card_target">24 августа 2021</p>
+          </div>
+          <div class="second-section__card_item">
+            <p class="second-section__card_label">Приз</p>
+            <a href="#" class="second-section__card_target show-modal">Играть</a>
+          </div>
+        </div>
+        <div class="second-section__card success">
+          <div class="second-section__card_img"></div>
+          <div class="second-section__card_item">
+            <p class="second-section__card_label">Статус</p>
+            <p class="second-section__card_target status scc">Одобрен</p>
+          </div>
+          <div class="second-section__card_item">
+            <p class="second-section__card_label">Дата</p>
+            <p class="second-section__card_target">24 августа 2021</p>
+          </div>
+          <div class="second-section__card_item">
+            <p class="second-section__card_label">Приз</p>
+            <a href="#" class="second-section__card_target show-modal">Играть</a>
+          </div>
+        </div>
+        <div class="second-section__card success">
+          <div class="second-section__card_img"></div>
+          <div class="second-section__card_item">
+            <p class="second-section__card_label">Статус</p>
+            <p class="second-section__card_target status scc">Одобрен</p>
+          </div>
+          <div class="second-section__card_item">
+            <p class="second-section__card_label">Дата</p>
+            <p class="second-section__card_target">24 августа 2021</p>
+          </div>
+          <div class="second-section__card_item">
+            <p class="second-section__card_label">Приз</p>
+            <a href="#" class="second-section__card_target show-modal">Играть</a>
           </div>
         </div>
         <div class="second-section__card success">
@@ -313,7 +374,7 @@
           <div class="second-section__card_item">
             <p>Здесь будут твои <br>зарегистрированные чеки</p>
           </div>
-          <a href="#" class="header__download-check second-section__card_btn">Загрузить чек</a>
+          <a href="#" class="second-section__card_btn">Загрузить чек</a>
         </div>
       </div>
 
@@ -463,110 +524,6 @@
               <p>Здесь будут твои призы</p>
             </div>
             <a href="#" class="winners__card_btn">Загрузить чек</a>
-          </div>
-          <div class="winners__card">
-            <div class="winners__card_img">
-              <img src="./dist/img/account/check-10r.png" alt="img">
-            </div>
-            <div class="winners__card_text">
-              <span>Статус</span>
-              <p>Выиграл</p>
-            </div>
-            <div class="winners__card_text date">
-              <span>Дата</span>
-              <p>24 августа 2021</p>
-            </div>
-          </div>
-          <div class="winners__card">
-            <div class="winners__card_img">
-              <img src="./dist/img/account/check-15r.png" alt="img">
-            </div>
-            <div class="winners__card_text">
-              <span>Статус</span>
-              <p>Выиграл</p>
-            </div>
-            <div class="winners__card_text date">
-              <span>Дата</span>
-              <p>24 августа 2021</p>
-            </div>
-          </div>
-          <div class="winners__card">
-            <div class="winners__card_img">
-              <img src="./dist/img/account/check-20r.png" alt="img">
-            </div>
-            <div class="winners__card_text">
-              <span>Статус</span>
-              <p>Выиграл</p>
-            </div>
-            <div class="winners__card_text date">
-              <span>Дата</span>
-              <p>24 августа 2021</p>
-            </div>
-          </div>
-          <div class="winners__card">
-            <div class="winners__card_img">
-              <img src="./dist/img/account/check-300r.png" alt="img">
-            </div>
-            <div class="winners__card_text">
-              <span>Статус</span>
-              <p>Выиграл</p>
-            </div>
-            <div class="winners__card_text date">
-              <span>Дата</span>
-              <p>24 августа 2021</p>
-            </div>
-          </div>
-          <div class="winners__card">
-            <div class="winners__card_img">
-              <img src="./dist/img/account/check-10r.png" alt="img">
-            </div>
-            <div class="winners__card_text">
-              <span>Статус</span>
-              <p>Выиграл</p>
-            </div>
-            <div class="winners__card_text date">
-              <span>Дата</span>
-              <p>24 августа 2021</p>
-            </div>
-          </div>
-          <div class="winners__card">
-            <div class="winners__card_img">
-              <img src="./dist/img/account/check-15r.png" alt="img">
-            </div>
-            <div class="winners__card_text">
-              <span>Статус</span>
-              <p>Выиграл</p>
-            </div>
-            <div class="winners__card_text date">
-              <span>Дата</span>
-              <p>24 августа 2021</p>
-            </div>
-          </div>
-          <div class="winners__card">
-            <div class="winners__card_img">
-              <img src="./dist/img/account/check-20r.png" alt="img">
-            </div>
-            <div class="winners__card_text">
-              <span>Статус</span>
-              <p>Выиграл</p>
-            </div>
-            <div class="winners__card_text date">
-              <span>Дата</span>
-              <p>24 августа 2021</p>
-            </div>
-          </div>
-          <div class="winners__card">
-            <div class="winners__card_img">
-              <img src="./dist/img/account/check-300r.png" alt="img">
-            </div>
-            <div class="winners__card_text">
-              <span>Статус</span>
-              <p>Выиграл</p>
-            </div>
-            <div class="winners__card_text date">
-              <span>Дата</span>
-              <p>24 августа 2021</p>
-            </div>
           </div>
           <div class="winners__card">
             <div class="winners__card_img">
