@@ -28,9 +28,15 @@ function checkValidate() {
                     PhoneNumber: true
                 },
                 select: {
-                    required: true,
+                    required: true
                 },
                 Message: {
+                    required: true
+                },
+                checkbox1: {
+                    required: true
+                },
+                checkbox2: {
                     required: true
                 },
                 Password: {
