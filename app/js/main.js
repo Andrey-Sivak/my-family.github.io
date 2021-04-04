@@ -544,7 +544,7 @@ window.addEventListener('load', function () {
                     isAnimationEnd = true;
                     d += 360;
                 }
-            });
+            }, {once: true});
 
             circle.addEventListener('transitionend', e => {
 
@@ -711,6 +711,26 @@ window.addEventListener('load', function () {
                     el.classList.remove("scroll");
                 }
             }
+        }
+    })();
+
+    (function cookie() {
+        if (!window.localStorage.getItem('isCookie')) {
+            const elem = `<div class="cookie">
+  <div class="container">
+    <div class="img"></div>
+    <p class="text">Мы используем файлы cookie, чтобы обеспечивать правильную работу нашего веб-сайта, персонализировать рекламные объявления и другие материалы, обеспечивать работу функций социальных сетей и анализировать сетевой трафик. Мы также предоставляем информацию об использовании вами нашего веб-сайта своим партнерам по социальным сетям, рекламе и аналитическим системам.Если Вы хотите узнать больше о cookie-файлах <a href="#">нажмите здесь</a></p>
+    <a href="#" class="cookie-btn btn">Понятно</a>
+  </div>
+</div>`;
+            document.body.insertAdjacentHTML('beforeend', elem);
+            document.querySelector('.cookie-btn')
+                .addEventListener('click', e => {
+                    e.preventDefault();
+
+                    window.localStorage.setItem('isCookie', 'true');
+                    document.body.removeChild(document.querySelector('.cookie'));
+                })
         }
     })();
 
