@@ -355,13 +355,43 @@ window.addEventListener('load', function () {
             [...document.querySelectorAll('.products__item')]
                 .forEach(p => {
                     p.addEventListener('click', function (e) {
+                        const target = e.target;
+                        if (target.classList.contains('stop')) {
+                            return;
+                        }
+
                         this.classList.add('no-hover');
                         setTimeout(() => {
                             this.classList.remove('no-hover');
                         }, 500);
                         this.classList.toggle('active');
                     })
+                });
+
+            [...document.querySelectorAll('.switch-box')]
+                .forEach(s => {
+                    s.addEventListener('click', switchBoxes);
                 })
+        }
+
+        function switchBoxes(e) {
+            const targ = e.target;
+            const val = targ.dataset.box;
+            const btnWrap = targ.parentElement;
+            const wrap =  btnWrap.parentElement;
+            if (!wrap
+                .querySelector(`img[data-volume="${val}"]`)
+                .classList
+                .contains('active')) {
+                btnWrap.querySelectorAll('.switch-box')
+                    .forEach(e => {
+                        e.classList.toggle('active');
+                    });
+                wrap.querySelectorAll('img')
+                    .forEach(e => {
+                        e.classList.toggle('active');
+                    })
+            }
         }
     })();
 
