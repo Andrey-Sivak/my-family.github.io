@@ -36,7 +36,7 @@ window.addEventListener('load', function () {
         }
 
         function scrollHandler() {
-            if (window.pageYOffset > sticky + 100) {
+            if (window.pageYOffset > sticky) {
                 header.classList.add("scroll");
             } else {
                 header.classList.remove("scroll");
