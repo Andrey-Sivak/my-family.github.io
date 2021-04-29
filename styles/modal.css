@@ -1,46 +1,13 @@
 @font-face {
-    font-family: 'Gotham Pro';
-    src: url('https://5ÐºÐ°.jacobs.promo/fonts/GothamPro-Medium.eot');
-    src: url('https://5ÐºÐ°.jacobs.promo/fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
-    url('https://5ÐºÐ°.jacobs.promo/fonts/GothamPro-Medium.woff2') format('woff2'),
-    url('https://5ÐºÐ°.jacobs.promo/fonts/GothamPro-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Gotham Pro';
-    src: url('https://5ÐºÐ°.jacobs.promo/fonts/GothamPro-Bold.eot');
-    src: url('https://5ÐºÐ°.jacobs.promo/fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
-    url('https://5ÐºÐ°.jacobs.promo/fonts/GothamPro-Bold.woff2') format('woff2'),
-    url('https://5ÐºÐ°.jacobs.promo/fonts/GothamPro-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Gotham Pro';
-    src: url('https://5ÐºÐ°.jacobs.promo/fonts/GothamPro-Light.eot');
-    src: url('https://5ÐºÐ°.jacobs.promo/fonts/GothamPro-Light.eot?#iefix') format('embedded-opentype'),
-    url('https://5ÐºÐ°.jacobs.promo/fonts/GothamPro-Light.woff2') format('woff2'),
-    url('https://5ÐºÐ°.jacobs.promo/fonts/GothamPro-Light.woff') format('woff');
+    font-family: "DIN2014Narrow";
     font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
+    src: url("./DIN2014Narrow-Light.otf") format("truetype");
+    font-style: normal; }
 @font-face {
-    font-family: 'Gotham Pro';
-    src: url('https://5ÐºÐ°.jacobs.promo/fonts/GothamPro.eot');
-    src: url('https://5ÐºÐ°.jacobs.promo/fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
-    url('https://5ÐºÐ°.jacobs.promo/fonts/GothamPro.woff2') format('woff2'),
-    url('https://5ÐºÐ°.jacobs.promo/fonts/GothamPro.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+    font-family: "PF-Reminder-Pro";
+    font-weight: 500;
+    src: url("./PF-Reminder-Pro-Medium.ttf") format("truetype");
+    font-style: normal; }
 
 ::-webkit-scrollbar {
     width: 0;
@@ -53,7 +20,7 @@ html {
 }
 
 body {
-    font-family: 'Gotham Pro';
+    font-family: 'DIN2014Narrow';
     font-weight: normal;
     font-style: normal;
     background-color: transparent;
@@ -93,7 +60,7 @@ body {
 }
 
 .container-tutorial__text {
-    font-family: 'Gotham Pro';
+    font-family: 'DIN2014Narrow';
     font-weight: 300;
     font-size: 14px;
     line-height: 16px;
@@ -274,7 +241,7 @@ body {
     width: 100%;
     height: 50px;
     padding-left: 20px !important;
-    font-family: 'Gotham Pro';
+    font-family: 'DIN2014Narrow';
     font-size: 14px;
     line-height: 1;
     color: #000;
@@ -419,16 +386,7 @@ app-root .dropzone .dz-preview .dz-image {
     width: 100px;
     height: 100px;
 }
-@font-face {
-    font-family: "DIN2014Narrow";
-    font-weight: 300;
-    src: url("./DIN2014Narrow-Light.otf") format("truetype");
-    font-style: normal; }
-@font-face {
-    font-family: "PF-Reminder-Pro";
-    font-weight: 500;
-    src: url("./PF-Reminder-Pro-Medium.ttf") format("truetype");
-    font-style: normal; }
+
 
 
 body {
