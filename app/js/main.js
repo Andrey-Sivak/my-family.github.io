@@ -96,7 +96,9 @@ window.addEventListener('load', function () {
                 tmp = 1;
 
                 $(wrap).slick({
-                    dots: true
+                    dots: true,
+                    prevArrow: '<button type="button" class="slick-prev"></button>',
+                    nextArrow: '<button type="button" class="slick-next"></button>',
                 });
             } else if (needWidth < winWidth && slider) {
                 tmp = 0;
@@ -125,12 +127,31 @@ window.addEventListener('load', function () {
 
                     setTimeout(() => {
                         this.classList.add('active');
+
                         [...document.querySelectorAll('.winners__tabs_wrap')]
                             .forEach(function (item) {
+                                let apple = null;
+                                let appleStyles = null;
+                                if (document.querySelector('.four-section__fruit.apple')) {
+                                    apple = document.querySelector('.four-section__fruit.apple');
+                                    appleStyles = getComputedStyle(apple);
+                                }
+
                                 if (item.dataset.tabContent === num) {
                                     item.classList.remove('hide');
                                     item.classList.add('active');
+
+                                    if (apple
+                                        && !item.querySelector('.slider__slide')
+                                        && appleStyles.display === 'block'){
+                                        apple.style.display = 'none';
+                                    }
                                 } else {
+                                    if (apple
+                                        && appleStyles.display === 'none'
+                                        && item.querySelector('.slider__slide')){
+                                        apple.style.display = 'block';
+                                    }
                                     item.classList.add('hide');
                                 }
                             });
@@ -780,5 +801,9 @@ window.addEventListener('load', function () {
                         .classList.remove('active');
                 })
         }
+    })();
+
+    (function winnersFixApple() {
+
     })();
 });
