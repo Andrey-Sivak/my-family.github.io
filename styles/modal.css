@@ -306,27 +306,15 @@ zxing-scanner {
 }
 
 app-root button {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    height: 30px;
-    margin: auto;
-    padding: 7px 20px;
-    background: linear-gradient(90deg, #B58840 -6.52%, #F2E996 52.31%, #B58840 124.17%);
-    font-weight: bold;
-    font-size: 10px;
-    line-height: 1;
-    text-align: center;
-    text-transform: uppercase;
-    color: #1E402C;
     border: none;
-    border-radius: 33px;
-    z-index: 1;
-    transition: all .2s linear;
-    outline: none;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    background-color: #C10230;
+    color: #fff;
+    border-radius: 40px;
     cursor: pointer;
+    margin: 0 auto 15px;
 }
 
 app-root button:hover {
