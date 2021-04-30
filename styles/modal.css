@@ -464,3 +464,12 @@ body .dropzone .dz-preview .dz-image {
     width: 100%;
     display: block;
 }
+body .container.uf-container.container--custom {
+    max-width: 100%;
+}
+.container.uf-container.container--custom .dropzone.dz-clickable {
+    max-width: 100%;
+}
+.container.uf-container.container--custom .dropzone .dz-message span {
+    max-width: 100%;
+}
