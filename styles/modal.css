@@ -62,8 +62,8 @@ body {
 .container-tutorial__text {
     font-family: 'DIN2014Narrow';
     font-weight: 300;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 18px;
+    line-height: 20px;
     margin-bottom: 20px;
 }
 
@@ -151,6 +151,8 @@ body {
     text-align: center;
     background-color: #C10230;
     color: #fff;
+    font-size: 20px;
+    font-family: 'PF-Reminder-Pro';
     border-radius: 40px;
     cursor: pointer;
     margin: 0 auto 15px;
@@ -166,26 +168,17 @@ body {
 }
 
 .dropzone.dz-started .dz-message span {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 168px;
-    height: 30px;
-    margin: auto;
-    padding: 7px 10px;
-    background: transparent;
-    font-weight: bold;
-    font-size: 10px;
-    line-height: 1;
+    border: none;
+    padding: 10px;
+    display: block;
     text-align: center;
-    text-transform: uppercase;
-    color: #D4B464;
-    border: 1px solid #F2E996;
-    border-radius: 33px;
-    transition: all .2s linear;
-    outline: none;
+    background-color: #C10230;
+    color: #fff;
+    border-radius: 40px;
     cursor: pointer;
+    font-size: 18px;
+    font-family: 'PF-Reminder-Pro';
+    margin: 0 auto 15px;
 }
 
 .uf-switchToManuallyButton-wrapper.switchToManuallyButton-wrapper--custom button {
@@ -197,6 +190,8 @@ body {
     color: #fff;
     border-radius: 40px;
     cursor: pointer;
+    font-size: 20px;
+    font-family: 'PF-Reminder-Pro';
     margin: 0 auto 15px;
 }
 
@@ -240,13 +235,13 @@ body {
     /*overflow: hidden;*/
     margin: 10px auto;
     width: 100%;
-    min-width: 220px;
-    max-width: 260px;
+    min-width: unset;
+    max-width: 230px;
 }
 
 .input-group.date input {
     margin: 0;
-    min-width: 220px;
+    min-width: 180px;
 }
 
 .input-group.date .input-group-addon {
@@ -293,6 +288,8 @@ app-root button {
     border-radius: 40px;
     cursor: pointer;
     margin: 0 auto 15px;
+    font-size: 20px;
+    font-family: 'PF-Reminder-Pro';
 }
 
 app-root button:hover {
@@ -386,6 +383,8 @@ button.button-switchToManually--custom {
     border-radius: 40px;
     cursor: pointer;
     margin: 0 auto 15px;
+    font-size: 20px;
+    font-family: 'PF-Reminder-Pro';
 }
 
 button.button-submit--custom {
@@ -398,7 +397,10 @@ button.button-submit--custom {
     color: #fff;
     border-radius: 40px;
     cursor: pointer;
-    margin: 0 auto 15px; }
+    margin: 0 auto 15px;
+    font-size: 20px;
+    font-family: 'PF-Reminder-Pro';
+}
 
 form.dropzone--custom {
     margin: 30px auto;
