@@ -29,11 +29,11 @@ body {
     -webkit-overflow-scrolling: touch;
     box-sizing: content-box;
     height: 100%;
-    color: #fff;
+    color: #000;
 }
 
 .container.uf-container.container--custom {
-    color: #fff;
+    color: #000;
     font-size: 14px;
     position: fixed;
     top: 0;
@@ -118,7 +118,7 @@ body {
     padding: 0;
     border-radius: 23px;
     z-index: 21;
-    color: #fff;
+    color: #000;
     -webkit-transition: all .2s ease-out;
     transition: all .2s ease-out;
     text-decoration: none;
@@ -293,7 +293,7 @@ body {
     font-size: 12px;
     line-height: 14px;
     text-align: center;
-    color: #fff;
+    color: #000;
     margin-bottom: 20px;
 }
 
@@ -335,7 +335,7 @@ app-root button:hover {
 
 dropzone {
     min-height: 156px;
-    border: 2px solid #fff;
+    border: 2px solid #000;
     background: #fff;
     margin: 0 auto 25px;
 }
